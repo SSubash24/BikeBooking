@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--Added the <html lang="en"> attribute to specify the language of the document.-->
+<head>
+  <title>Bike Booking Login</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+  body{
+    background-color:rgb(40, 158, 194);
+  }
+  .container{
+    padding-left: 600px;
+  }
+  form label{
+    color: brown;
+    transform: scale(1.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+  }
+  img{
+    padding-top: 100px;
+  }
+  .div2{
+    padding-left: 70px;
+  }
+</style>
+<body>
+  <div class="container">
+    
+    <!--figure-->
+    <figure class="pic">
+
+      <!--footer-->
+      <footer>
+      <img src="a.jpeg" alt="cab" style="width:40%">
+    </footer>
+    </figure>
+    <div class="div2">
+      <!--header-->
+      <header>
+    <h1>Bike Booking Login</h1>
+  </header>
+
+    <!-- <form onsubmit="return validateForm()"> -->
+      <form action="1.php">
+      <label for="username">Username:</label><br><br>
+      <input type="text" id="username" name="username" required><br><br>
+      <label for="password">Password:</label><br><br>
+      <input type="password" id="password" name="password" required>
+      <p> </p>
+      <button type="submit">Submit</button>
+      <p> Don't have an account? </p>
+
+      <!--footer-->
+      <footer>
+      <nav><a href="d.html">Click here</a></nav>
+    </footer>
+      <p> </p>
+    </form>
+    </div>
+  </div>
+  <h1>  </h1>
+
+  <script>
+    function validateForm() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+  
+      if (username === '' || password === '') {
+        alert('Please fill out the field.');
+        return false;
+      }
+      
+      window.location.href = "c.html";
+      return false;
+    }
+  </script>
+  
+</body>
+</html>

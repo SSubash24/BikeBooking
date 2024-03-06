@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(155, 10, 222);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(10, 194, 222);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            padding: 10px 0;
+            background-color: #0d8bb5;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #3f91b2;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature i {
+            font-size: 48px;
+            color: #3f91b2;
+            margin-bottom: 10px;
+        }
+
+        .click {
+            display: flex;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3f91b2;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .home {
+                flex-direction: column;
+            }
+        }
+
+        /* Add your icon styles here */
+        .icon {
+            /* Add your icon styles here */
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Bike Booking</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+
+                <h2><center>Welcome to Bike Booking</center></h2>
+
+                <div class="home">
+                    <!-- Navigation -->
+                    <nav class="click">
+                        <ul>
+                            <li><a href="registration.php">Register</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="click">
+                        <ul>
+                            <li><a href="admin.php">Admin</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="click">
+                        <ul>
+                            <li><a href="booking.php">Booking</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <p>Our Bike taxi services are designed to suit your personal transportation needs. As the drivers do the
+                    driving, you can enjoy the ride without having to worry about the routes, parking areas, fees, and other
+                    such concerns.</p>
+
+                <p>Our companies employ full-time drivers who are subject to regular monitoring by the company. This means
+                    our company has access to security cameras, allowing them to keep an eye on both road conditions and driver
+                    behavior.</p>
+
+            </div>
+
+            <!-- Features section -->
+            <section class="features">
+                <div class="feature">
+                    <i class="icon icon-car"></i>
+                    <h3>Large Fleet</h3>
+                    <p>We have a wide range of vehicles available to suit your needs; you can choose the bike you like.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="icon icon-clock"></i>
+                    <h3>24/7 Service</h3>
+                    <p>Book a taxi anytime, day or night, and we'll be there for you.</p>
+                </div>
+
+                <div class="feature">
+                    <i class="icon icon-money"></i>
+                    <h3>Competitive Prices</h3>
+                    <p>Get affordable and transparent pricing with no hidden charges.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+</body>
+
+</html>

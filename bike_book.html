@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Booking</title>
+</head>
+<body>
+    <h1>Bike Booking Form</h1>
+    <form action="book_bike.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required pattern=".{3,}" title="Name must be at least 3 characters long"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" required pattern="[0-9]{10}" title="Phone number must be 10 digits long"><br>
+
+        <label for="bike_type">Bike Type:</label>
+        <select name="bike_type" required>
+            <option value="mountain_bike">Mountain Bike</option>
+            <option value="road_bike">Road Bike</option>
+            <option value="city_bike">City Bike</option>
+            <option value="electric_bike">Electric Bike</option>
+        </select><br>
+
+        <input type="submit" value="Book Bike">
+    </form>
+</body>
+</html>
